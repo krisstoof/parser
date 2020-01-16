@@ -24,7 +24,7 @@ if(file_exists($filename)){
 
 $file = fopen($filename, 'w');
 
-for($i = 1; $i <= 10; $i++){
+for($i = 1; $i <= 1; $i++){
     $html = file_get_html($url.'index.php?page='.$i);
     $list = $html->find('div.row', 0);
     $list_array = $list->find('div.col-lg-4');
